@@ -10,7 +10,7 @@ One of our core beliefs is to offer our customers the best support possible, by 
 The challenge we propose is the following: As a first step in helping customer support, come up with a way of labeling every picture that comes in according to the product that is in the picture. To keep with the Picnic spirit, we encourage to be as innovative and creative with your solutions as possible.
 
 ## Dataset
-To that end, we offer the following [dataset](https://github.com/Younes-Charfaoui/Picnic-Hackathon/blob/master/images/picnic_logo.png) of pictures of defect items.
+To that end, we offer the following [dataset](https://drive.google.com/file/d/1XSoOCPpndRCUIzz2LyRH0y01q35J7mgC/view?usp=sharing) of pictures of defect items.
 
 
 ![Thumb](https://github.com/Younes-Charfaoui/Picnic-Hackathon/blob/master/images/picnic-thumb.jpg)
