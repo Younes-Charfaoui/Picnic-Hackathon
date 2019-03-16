@@ -1,8 +1,9 @@
 # Picnic Hackathon 🥇✅💯
 Project of Picnic Hackathon 💯🎉 to create solution ✅ that help classify images of product for great customer support 👦, the slogon was **When great customer support meets data**
 
-
-<img src="https://challengepost-s3-challengepost.netdna-ssl.com/photos/production/challenge_photos/000/748/456/datas/full_width.png" alt="drawing" width="200"/>
+<div style="text-align:center">
+	<img src="https://challengepost-s3-challengepost.netdna-ssl.com/photos/production/challenge_photos/000/748/456/datas/full_width.png" alt="drawing" width="200"/>
+</div>
 
 ## Why the challenge?
 One of our core beliefs is to offer our customers the best support possible, by allowing them, for example, to send in pictures of defect products they wish to be reimbursed for. But processing these pictures is very time-consuming as it is all done manually.
