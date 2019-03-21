@@ -80,3 +80,15 @@ def train_model(model, epochs, generator = True):
   plt.plot(history.history['val_acc'])
   plt.show()
 
+true = pd.read_excel('test_5.xlsx')
+arr = true.iloc[:,1].values
+arr2 = df.iloc[:,1].values
+(arr == arr2).mean()
+from sklearn.metrics import f1_score
+nn = pd.merge(df.iloc[:,[0,1]],true.iloc[:,[0,1]] ,on = 'file')
+nn.isnull().sum()
+nn.head()
+r = nn.dropna(axis = 0)
+y_a = r.iloc[:,1].values
+y_b = r.iloc[:,2].values
+f1_score(y_b, y_a, average = 'macro')
