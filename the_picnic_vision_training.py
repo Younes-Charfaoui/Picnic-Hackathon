@@ -1,6 +1,3 @@
-
-## Setting & Imports  🔨🔧
-
 # Data Science Libraries
 import pandas as pd
 import numpy as np
@@ -36,7 +33,7 @@ train_df.head()
 
 # We will take off some images from the training process.
 bananas = [66, 425, 751, 758, 913, 1517, 1555, 1633, 2175, 2860, 3116, 3473, 4104, 4713, 4862, 4983, 5416, 5431, 5436, 5671, 5690, 6106, 7022, 7141, 7154]
-aspags = [599,1300, 2595]
+aspags = [599,1300,2595]
 potatos = [91, 131, 1184, 2998, 3373, 3397, 3653, 4599, 5718, 5918, 6646]
 pudding = [734,1059,1203,1252,1788,2028,2161,2310,2597,2633,3448,3629,4151,4879,4928,5064,5662,5771,5970,5973,7016]
 poultry = [200,2147,2337,2606,3003,5602,6932]
@@ -94,7 +91,7 @@ BATCH = 32
 SIZE = 224
 pathTrain = Path("gdrive/My Drive/train/")
 
-## Loading The Images 🍌🍉🍓🥦🥑🍆🍔🥝🍍🍎🍒🥒🌽🥕🍞
+# Loading The Images 
 
 # defining Transformations for Image Augmentation.
 tfms = get_transforms(do_flip=True, flip_vert=True, max_rotate=300)
@@ -105,7 +102,7 @@ data = ImageDataBunch.from_df(pathTrain, train_df_new, size= SIZE, bs = BATCH, d
 # show sample of images.
 data.show_batch(rows=3, figsize=(12,12))
 
-## Model Preparation 🔪🍳👨‍🍳
+# Model Preparation
 
 from sklearn.metrics import f1_score
 
@@ -149,7 +146,7 @@ def performane_indiators(model):
 # Making The CNN Model Using Our Images And Densenet161 Architeture.
 model = cnn_learner(data, MODEL, metrics=[accuracy])
 
-## Model Training 🧗‍♂️🏋🎯
+# Model Training
 
 # Fitting the model to data using OneCycle Policy.
 model.fit_one_cycle(20)
@@ -169,7 +166,7 @@ performane_indiators(model)
 
 model.save('stage-two')
 
-## Exporting Model 🚁💥
+# Exporting Model
 
 # we will export the model which got the best result on validation set.
 # in my case, the best was the stage-one.
@@ -177,4 +174,3 @@ model.load('stage-one')
 model.export('densenet161_best_so_far.pkl')
 
 print("Saved to path: {}".format(model.path))
-
