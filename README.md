@@ -19,7 +19,7 @@ I general you will need:
   - Other basic library like glob, path and so on.
 
 ### Re-Producing the Result 📽
-In order to get the result I got, you could simply run the `The_Picnic_Vision_Submission.ipynb` notebook and follow the instruction, you will need the model file which have the trained weight and the architecture, you can access it via this [link](https://drive.google.com/open?id=1YOK587WXdKvUPM7VruQxt2WQb49167zA).
+In order to get the result I got, you could simply run the `The_Picnic_Vision_Submission.ipynb` notebook and follow the instruction, you will need the model file which have the trained weight and the architecture, you can access it via this [link](https://drive.google.com/open?id=1Z5AjTG_e6z5RXUwspnK1ufp78SW0BpO3).
 
 To see how I've trained the model I got you can run the `The_Picnic_Vision_Training.ipynb` notebook in this repo and follow the instruction.
 
