@@ -97,7 +97,7 @@ pathTrain = Path("gdrive/My Drive/train/")
 tfms = get_transforms(do_flip=True, flip_vert=True, max_rotate=300)
 
 # Making Objet to hold all the images of training and validation, be sure to normalize them using imagenet stats.
-data = ImageDataBunch.from_df(pathTrain, train_df_new, size= SIZE, bs = BATCH, ds_tfms = tfms).normalize(imagenet_stats)
+data = ImageDataBunch.from_df(pathTrain, train_df_new, size= SIZE, bs = BATCH, ds_tfms = tfms, valid_pct = 0.0).normalize(imagenet_stats)
 
 # show sample of images.
 data.show_batch(rows=3, figsize=(12,12))
