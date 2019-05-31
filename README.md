@@ -1,4 +1,4 @@
-# Picnic Hackathon 🥇✅💯
+# Picnic Hackathon 🥇✅💯 (1st Place Winner 😅)
 Project of Picnic Hackathon 💯🎉 to create solution ✅ that help classify images of product for great customer support 👦, the slogon was **When great customer support meets data**
 
 <img src="https://github.com/Younes-Charfaoui/Picnic-Hackathon/blob/master/images/picnic_logo.png" alt="logo" width="200"/>
